@@ -1,6 +1,6 @@
 package day11.pet;
 
-public class Pet {
+public abstract class Pet {
 	private String name;
 	private int health;
 	private int love;
@@ -31,20 +31,9 @@ public class Pet {
 	public void setLove(int love) {
 		this.love = love;
 	}
-	public void eat() {
-		
-		
-	}
-	public void play() {
+	public abstract void eat();
 
-		
-	}
-
-	public void show() {
-		
-	}
-	public void hited() {
-		
-	}
+	public abstract void show();
+	public abstract void hited();
 	
 }
