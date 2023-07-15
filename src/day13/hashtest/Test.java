@@ -14,11 +14,24 @@ public class Test {
 			}
 		}*/
 		People p1= new People();
-		System.out.println(p1);
+		//System.out.println(p1);
 		People p= new People();
 		Class c = p.getClass();
-		System.out.println(c.toString());
-		System.out.println(c.hashCode());
+		c.equals(c);
+		String str = "dfs";
+		String s ="ssd";
+		String x =new String("ssd");
+		
+		
+		
+		System.out.println(s==x);
+		System.out.println(x);
+		str.equals(s);
+		str.toString();
+		System.out.println(str.valueOf(100));
+		System.out.println(p.toString());
+		System.out.println(p);
+		System.out.println(p.hashCode());
 		System.identityHashCode(p1);
 	}
 	

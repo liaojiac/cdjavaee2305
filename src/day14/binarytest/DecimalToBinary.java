@@ -1,6 +1,6 @@
 package day14.binarytest;
 import java.util.Scanner;
-public class DecimalToBinary {
+/*public class DecimalToBinary {
     public static void main(String[] args) {
     	Scanner input =new Scanner(System.in);
     	System.out.println("请输入");
@@ -18,4 +18,4 @@ public class DecimalToBinary {
         }
         return binary.toString();
     }
-}
+}*/
