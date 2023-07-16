@@ -1,4 +1,6 @@
-package chinese_chess.chess;
+package chinese_chess.biz;
+
+import java.awt.Graphics;
 
 import javax.swing.JPanel;
 
@@ -8,9 +10,15 @@ import javax.swing.JPanel;
  *
  */
 public class ChessPanel extends JPanel{
-
+	
+	//绘制图案
+	@Override
+	public void paint(Graphics g) {
+		g.drawImage(null, ALLBITS, ABORT, getFocusCycleRootAncestor());
+		
+	}
 	public void start() {
-		// TODO Auto-generated method stub
+		
 		
 	}
 

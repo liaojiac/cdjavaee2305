@@ -1,4 +1,4 @@
-package chinese_chess.chess;
+package chinese_chess.biz;
 
 //这是程序的入口----生成一个象棋界面并显示
 public class Test {

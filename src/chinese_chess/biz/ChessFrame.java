@@ -1,4 +1,4 @@
-package chinese_chess.chess;
+package chinese_chess.biz;
 
 import javax.swing.JFrame;
 
