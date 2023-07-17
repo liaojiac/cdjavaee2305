@@ -28,12 +28,18 @@ public class CollectionTest1 {
 		li.add("法外张三");
 		li.add("杀杀三");
 		li.add("唐三");
-		for (int i =li.size()-1; i >=0;i--) {
+		/*for (int i =li.size()-1; i >=0;i--) {
 			if(li.get(i).contains("张三")) {
 				li.remove(i);
 				
 			}
 			
+		}*/
+		Iterator<String> it = li.iterator();
+		while(it.hasNext()) {//迭代器判断是否还有元素
+			if(it.next().contains("张三")) {
+				it.remove();
+			}
 		}
 		System.out.println(li);
 	}
