@@ -24,8 +24,8 @@ public class ImageUtil {
 		}
 		return img;
 	}
-	/*public static void main(String[] args) {
+	public static void main(String[] args) {
 		Image image = getImage("images/bg.jpg");
 		System.out.println(image);
-	}*/
+	}
 }
