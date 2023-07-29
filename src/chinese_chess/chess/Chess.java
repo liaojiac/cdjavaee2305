@@ -3,9 +3,11 @@ package chinese_chess.chess;
  * 棋子类，是所以棋子的父类，规定了棋子的属性和方法
  */
 
+import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Point;
 
 import chinese_chess.util.Constant;
@@ -17,7 +19,7 @@ public abstract class Chess {
 	private Type type;// 棋子类型
 
 	public abstract boolean move(int x, int y);// 棋子移动的方法
-
+	
 	public Chess(Point point, Camp camp, Type type) {
 		this.point = point;
 		this.camp = camp;
@@ -56,7 +58,13 @@ public abstract class Chess {
 		g.setFont(new Font(Constant.FONT_FAMILY, Font.BOLD, Constant.FONT_SIZE));
 		g.drawString(getWord(), point.x+Constant.FONTR, point.y+Constant.FONTB);
 	}
-
+	//绘制选中棋子边框
+		public void drawBorder(Graphics g) {
+			g.setColor(Color.blue);
+			Graphics2D g2 = (Graphics2D)g;
+			g2.setStroke(new BasicStroke(3));
+			g.drawRect(point.x-2, point.y-2,Constant.CHESS_SIZE-3, Constant.CHESS_SIZE-3);
+		}
 	private String getWord() {
 		String word = "";
 		if(camp==Camp.黑方) {
@@ -88,6 +96,12 @@ public abstract class Chess {
 			}
 		}
 		return word;
-	};
+	}
+
+	@Override
+	public String toString() {
+		return "Chess [point=" + point + ", camp=" + camp + ", type=" + type + "]";
+	}
+	
 
 }
