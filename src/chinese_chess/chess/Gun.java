@@ -42,7 +42,7 @@ public class Gun extends Chess{
 		if(yYuan==y) {
 			chezz =0;
 			if(xYuan<x) {//向右走
-				  for(int i = xYuan+1;i<y;i++) {
+				  for(int i = xYuan+1;i<x;i++) {
 					  if(ChessPanel.allChess[y][i]!=null) {
 						  chezz++;
 					  }

@@ -4,5 +4,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="res"/>
 	<classpathentry kind="lib" path="lib/jol-core-0.9.jar"/>
+	<classpathentry kind="lib" path="lib/jl1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
